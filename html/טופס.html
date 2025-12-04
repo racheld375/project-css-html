@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה</title>
+
+<body dir="rtl"></body>
+<link rel="stylesheet" href="../css/טופס.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><a href="../main.html">דף ראשי</a></div>
+            <div><a href="עלינו.html">עלינו</a></div>
+            <div><a href="פרטים.html">פרטים</a></div>
+            <div><a id="my_page" href="טופס.html">הרשמה</a></div>
+        </nav>
+        <div id="responsev_button">פתיחת תפריט</div>
+    </header>
+    <main>
+        <form id="form">
+            <p>יש למלא רק את השדות הרלוונטים</p>
+            <div class="form-group">
+                <label for="fullName">שם מלא*</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="date">תאריך לידה*</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label>סמן את הצבעים שאת/ה אוהב/ת</label>
+                <div class="color">
+                    <label>
+                        <input type="checkbox" name="color" value="black"> שחור
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="white"> לבן
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="blue"> כחול
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="red"> אדום
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="green"> ירוק
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="yelow"> צהוב
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="handwriting">העלה צילום כתב יד.</label>
+                <input type="file" id="handwriting" name="handwriting">
+            </div>
+            <div class="form-group">
+                <label for="face">העלה צילום פנים.</label>
+                <input type="file" id="face" name="face">
+            </div>
+            <div class="form-group">
+                <label for="Handheld">העלה צילום כף יד.</label>
+                <input type="file" id="Handheld" name="Handheld">
+            </div>
+            <div class="form-group">
+                <label for="paint">העלה ציור עץ/בית.</label>
+                <input type="file" id="paint" name="paint">
+            </div>
+            <div class="form-group">
+                <label for="comments">הערות</label>
+                <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="הערה"></textarea>
+            </div>
+            <div class="button-group">
+                <button  title="לחץ כאן" type="submit" id="submit-btn">שלח</button>
+                <button type="reset" id="reset-btn">נקה טופס</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 אבחון מקיף - כל הזכויות שמורות</p>
+    </footer>
+</body>
+
+</html>
